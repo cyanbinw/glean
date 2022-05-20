@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"glean/genericityGlean"
 	"glean/typeGlean"
+	"strconv"
 )
 
 type IGleanWork interface {
@@ -28,8 +29,13 @@ func selected() IGleanWork {
 	fmt.Println(" 2.GenericityDemo ")
 	fmt.Println(" 0.Exit ")
 
-	var num int
-	fmt.Scan(&num)
+	var str string
+	fmt.Scan(&str)
+	num, err := strconv.Atoi(str)
+	if err != nil {
+		fmt.Println(" Error, please re-enter")
+		return selected()
+	}
 	var i IGleanWork
 	switch num {
 	case 1:
