@@ -41,7 +41,7 @@ func selected() IGleanWork {
 	var i IGleanWork
 	switch num {
 	case 1:
-		i = &typeGlean.TypeClass{}
+		i = &typeGlean.TypeFuncClass{}
 		break
 	case 2:
 		i = &genericityGlean.GenericityDemo{}
@@ -49,6 +49,7 @@ func selected() IGleanWork {
 	case 3:
 		i = &asynchronousGlean.AsynchronousDemo{}
 		break
+	case 4:
 	case 0:
 		return nil
 

@@ -5,12 +5,12 @@ import (
 	"strings"
 )
 
-type TypeClass struct {
+type TypeFuncClass struct {
 }
 
 type testFunc func(str string) error
 
-func (t *TypeClass) Run() error {
+func (t *TypeFuncClass) Run() error {
 	var i []string
 	i = append(i, "I")
 	i = append(i, "want")
