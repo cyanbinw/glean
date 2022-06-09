@@ -50,6 +50,7 @@ func selected() IGleanWork {
 		i = &asynchronousGlean.AsynchronousDemo{}
 		break
 	case 4:
+	case 5:
 	case 0:
 		return nil
 
