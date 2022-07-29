@@ -24,6 +24,14 @@ func (t *TypeFuncClass) Run() error {
 	return nil
 }
 
+func (t *TypeFuncClass) Stop() error {
+	return nil
+}
+
+func (t *TypeFuncClass) Close() error {
+	return nil
+}
+
 func use(test testFunc, str []string) {
 	fmt.Println("What are you do?")
 

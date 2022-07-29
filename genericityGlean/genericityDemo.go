@@ -24,6 +24,14 @@ func (data *GenericityDemo) Run() error {
 	return nil
 }
 
+func (data *GenericityDemo) Stop() error {
+	return nil
+}
+
+func (data *GenericityDemo) Close() error {
+	return nil
+}
+
 func useGenericity[T any](i any) {
 	fmt.Println(reflect.TypeOf(i))
 	fmt.Printf("%T \n", i)

@@ -19,6 +19,14 @@ func (data *AsynchronousDemo) Run() error {
 	return nil
 }
 
+func (data *AsynchronousDemo) Stop() error {
+	return nil
+}
+
+func (data *AsynchronousDemo) Close() error {
+	return nil
+}
+
 func sum(x, y int, c chan int) {
 	fmt.Println("sum start")
 	time.Sleep(5 * time.Second)
