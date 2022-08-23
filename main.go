@@ -11,6 +11,8 @@ import (
 
 type IGleanWork interface {
 	Run() error
+	Stop() error
+	Close() error
 }
 
 type Action func(gleanWork IGleanWork) error
