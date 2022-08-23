@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"glean/asynchronousGlean"
 	"glean/genericityGlean"
+	"glean/messageQueue"
 	"glean/typeGlean"
 	"strconv"
 )
@@ -29,6 +30,7 @@ func selected() IGleanWork {
 	fmt.Println(" 1.TypeFunc ")
 	fmt.Println(" 2.GenericityDemo ")
 	fmt.Println(" 3.AsynchronousDemo ")
+	fmt.Println(" 4.RabbitMQDemo ")
 	fmt.Println(" 0.Exit ")
 
 	var str string
@@ -50,6 +52,7 @@ func selected() IGleanWork {
 		i = &asynchronousGlean.AsynchronousDemo{}
 		break
 	case 4:
+		i = &messageQueue.RabbitMQDemo{}
 	case 5:
 	case 0:
 		return nil
