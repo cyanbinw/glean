@@ -50,3 +50,11 @@ func (data *RabbitMQDemo) Run() error {
 	log.Printf(" [x] Sent %s\n", body)
 	return nil
 }
+
+func (data *RabbitMQDemo) Stop() error {
+	return nil
+}
+
+func (data *RabbitMQDemo) Close() error {
+	return nil
+}
