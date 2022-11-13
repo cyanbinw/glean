@@ -67,6 +67,7 @@ func selected() IGleanWork {
 	return i
 }
 
+// run function
 func run(action Action, gleanWork IGleanWork) {
 	fmt.Println(" -------------------- Work Start -------------------- ")
 	err := action(gleanWork)
